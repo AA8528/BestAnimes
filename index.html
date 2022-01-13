@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        .window{
+            width: 50%;
+            margin: auto;
+            margin-top: 100px;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .reel{
+            width: 800%;
+            height: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            animation: slider 10s infinite;
+        }
+        .reel img{
+            height: 100%;
+            width: 12.5%;
+            float: left;
+        }
+        @keyframes slider {
+            0%{left: 0;}
+            5%{left: 0;}
+            10%{left: 0;}
+            15%{left: -100%;}
+            20%{left: -100;}
+            25%{left: -200%;}
+            30%{left: -200%;}
+            35%{left: -300%;}
+            40%{left: -300%;}
+            45%{left: -400%;}
+            50%{left: -400%;}
+            55%{left: -500%;}
+            60%{left: -500%;}
+            65%{left: -600%;}
+            70%{left: -600%;}
+            75%{left: -700%;}
+            80%{left: -700%;}
+            85%{left: -700%;}
+            90%{left: -700%;}
+            95%{left: -700%;}
+            100%{left: 0%;}
+        }
+
+    </style>
+</head>
+<body>
+
+    <center>
+        <font size="10" color="black" face="Permanent Marker">BEST ANIMES TO WATCH</font>
+    </center>
+
+    <div class="window">
+        <div class="reel">
+            <img src="Naruto.jpg" alt="">
+            <img src="Naruto Shippuden.jpg" alt="">
+            <img src="Death Note.jpg" alt="">
+            <img src="Jujutsu Kaisen.jpg" alt="">
+            <img src="Balance Unlimited.jpg" alt="">
+            <img src="Kuroko.jpg" alt="">
+            <img src="One Punch.jpg" alt="">
+            <img src="Haikyu.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
